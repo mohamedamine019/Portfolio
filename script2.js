@@ -199,20 +199,27 @@ function initSkillsOrbit() {
 }
 
 // Contact Form Handler
+// Update the initContactForm function
 function initContactForm() {
   const form = document.querySelector('.contact-form');
   if (!form) return;
 
+  // Create toast notification container if it doesn't exist
+  let toastContainer = document.querySelector('.toast-container');
+  if (!toastContainer) {
+    toastContainer = document.createElement('div');
+    toastContainer.className = 'toast-container';
+    document.body.appendChild(toastContainer);
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Get form values
     const name = form.querySelector('input[type="text"]').value.trim();
     const email = form.querySelector('input[type="email"]').value.trim();
     const projectType = form.querySelector('select').value;
     const message = form.querySelector('textarea').value.trim();
 
-    // Save to Firestore
     try {
       await db.collection('contacts').add({
         name,
@@ -221,13 +228,46 @@ function initContactForm() {
         message,
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
       });
-      alert('Thank you! Your message has been sent.');
+      
+      // Show success toast
+      showToast('success', '✨ Message Sent Successfully!', 'Thank you for reaching out. I will get back to you soon.');
       form.reset();
     } catch (error) {
-      alert('Error sending message. Please try again.');
+      // Show error toast
+      showToast('error', '❌ Message Failed to Send', 'Please try again or contact me directly via email.');
       console.error(error);
     }
   });
+}
+
+// Add this helper function for creating toasts
+function showToast(type, title, message) {
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  
+  toast.innerHTML = `
+    <div class="toast-content">
+      <h4>${title}</h4>
+      <p>${message}</p>
+    </div>
+    <button class="toast-close">×</button>
+  `;
+
+  const toastContainer = document.querySelector('.toast-container');
+  toastContainer.appendChild(toast);
+
+  // Add click handler for close button
+  const closeBtn = toast.querySelector('.toast-close');
+  closeBtn.addEventListener('click', () => {
+    toast.classList.add('toast-fade-out');
+    setTimeout(() => toast.remove(), 300);
+  });
+
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    toast.classList.add('toast-fade-out');
+    setTimeout(() => toast.remove(), 300);
+  }, 5000);
 }
 
 // Hero CTA Buttons
