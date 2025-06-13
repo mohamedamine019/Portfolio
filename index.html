@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAICHEUR Mohamed Amine - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <div class="toggle-icon light-mode">☀️</div>
+        <div class="toggle-icon dark-mode active">🌙</div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <span class="math-symbol">∑</span>
+            <span>AMINE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="geometric-explosion">
+            <div class="tesseract">
+                <div class="cube outer">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+                <div class="cube inner">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">HAICHEUR</span>
+                <span class="line">Mohamed Amine</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Web Developer & Mathematics Enthusiast</p>
+            <p class="hero-welcome">Welcome to my world – where logic meets creativity.</p>
+            <div class="hero-cta">
+                <button class="cta-button primary">Explore My Work</button>
+                <button class="cta-button secondary">Download CV</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">🧠 About Me</h2>
+            <div class="about-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-content">
+                                <div class="math-formula">∫ f(x)dx = F(x) + C</div>
+                                <h3>Mathematical Foundation</h3>
+                                <p>Analytical thinking meets creative problem-solving</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-content">
+                                <h3>My Journey</h3>
+                                <p>From abstract mathematical concepts to concrete web solutions, I bridge the gap between theoretical knowledge and practical applications. My background in applied mathematics provides me with a unique perspective on problem-solving and system architecture.</p>
+                                <div class="location">📍 Algeria</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate Full Stack Web Developer with a deep love for mathematics and geometry. My journey began with exploring the elegant patterns of mathematical logic, which naturally evolved into crafting digital experiences that are both functional and beautiful.</p>
+                    <p>I believe that the best solutions emerge when analytical thinking meets creative innovation. Every line of code I write is influenced by mathematical precision and geometric harmony.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title">📂 Projects</h2>
+                <div class="search-container">
+                    <input type="text" id="project-search" placeholder="Search projects...">
+                    <div class="search-icon">🔍</div>
+                </div>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="filter-icon">🔍</span> All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="frontend">
+                        <span class="filter-icon">🎨</span> Frontend
+                    </button>
+                    <button class="filter-btn" data-filter="fullstack">
+                        <span class="filter-icon">⚙️</span> Fullstack
+                    </button>
+                    <button class="filter-btn" data-filter="firebase">
+                        <span class="filter-icon">🔥</span> Firebase
+                    </button>
+                    <button class="filter-btn" data-filter="educational">
+                        <span class="filter-icon">📚</span> Educational
+                    </button>
+                    <button class="filter-btn" data-filter="games">
+                        <span class="filter-icon">🎮</span> Games
+                    </button>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <!-- E-Commerce Project -->
+                <div class="project-card" data-category="fullstack firebase" data-title="E-Commerce Platform" data-tags="react firebase stripe redux shopping cart">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="./image/e-com.png" alt="E-Commerce Platform">
+                        </div>
+                        <h3 class="project-title">Nexus Shop</h3>
+                        <span class="project-category">Fullstack</span>
+                        <p class="project-description">
+                            A comprehensive e-commerce solution with real-time inventory management, secure payment processing, and user authentication.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="React">⚛️</div>
+                            <div class="tech-icon" title="Firebase">🔥</div>
+                            <div class="tech-icon" title="Stripe">💳</div>
+                            <div class="tech-icon" title="Redux">🔄</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Nexus Shop</h3>
+                            <p class="project-full-description">
+                                A full-featured e-commerce platform built with React and Firebase. Features include real-time inventory tracking, secure payment processing with Stripe, user authentication, and order management.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>User authentication and profiles</li>
+                                    <li>Product search and filtering</li>
+                                    <li>Shopping cart and wishlist</li>
+                                    <li>Secure payment processing</li>
+                                    <li>Order tracking and history</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://nexus-shop-ecom.web.app" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="https://github.com/mohamedamine019" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mathematical Visualizer -->
+                <div class="project-card" data-category="frontend educational" data-title="Mathematical Visualizer" data-tags="three.js webgl node.js d3.js visualization 3d">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="./image/aiid-varphi.png" alt="Mathematical Visualizer">
+                        </div>
+                        <h3 class="project-title">Mathematical Visualizer(Varphi Club)</h3>
+                        <span class="project-category">Educational</span>
+                        <p class="project-description">
+                            Interactive tool for visualizing complex mathematical functions and geometric transformations in 3D space.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="Three.js">🌐</div>
+                            <div class="tech-icon" title="WebGL">🎮</div>
+                            <div class="tech-icon" title="Node.js">🟢</div>
+                            <div class="tech-icon" title="D3.js">📊</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Mathematical Visualizer</h3>
+                            <p class="project-full-description">
+                                An educational tool that brings complex mathematical concepts to life through interactive 3D visualizations. Users can explore functions, geometric transformations, and mathematical principles in an intuitive interface.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>3D function plotting</li>
+                                    <li>Vector field visualization</li>
+                                    <li>Geometric transformation demos</li>
+                                    <li>Interactive parameter controls</li>
+                                    <li>Educational explanations</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://varphi-aiid.web.app" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="https://github.com/mohamedamine019" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Management System -->
+                <!-- <div class="project-card" data-category="fullstack educational" data-title="Learning Management System" data-tags="react mongodb express tailwind education lms">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="./image/aid-el-adha.png?height=180&width=320" alt="Learning Management System">
+                        </div>
+                        <h3 class="project-title">Learning Management System(aid-el-adha)</h3>
+                        <span class="project-category">Educational</span>
+                        <p class="project-description">
+                            Comprehensive platform for creating, managing, and delivering educational content with interactive assessments.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="React">⚛️</div>
+                            <div class="tech-icon" title="MongoDB">🍃</div>
+                            <div class="tech-icon" title="Express">🚂</div>
+                            <div class="tech-icon" title="TailwindCSS">🎨</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Learning Management System</h3>
+                            <p class="project-full-description">
+                                A full-featured LMS built with the MERN stack. Provides tools for course creation, student enrollment, progress tracking, and interactive assessments with real-time feedback.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Course creation and management</li>
+                                    <li>Student enrollment and tracking</li>
+                                    <li>Interactive quizzes and assignments</li>
+                                    <li>Progress analytics and reporting</li>
+                                    <li>Discussion forums and messaging</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://aid-el-adha-by-amine.web.app" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="https://github.com/mohamedamine019" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Data Analytics Dashboard -->
+                <!-- <div class="project-card" data-category="frontend fullstack" data-title="Data Analytics Dashboard" data-tags="vue d3 express postgresql data visualization charts">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=180&width=320" alt="Data Analytics Dashboard">
+                        </div>
+                        <h3 class="project-title">Data Analytics Dashboard</h3>
+                        <span class="project-category">Fullstack</span>
+                        <p class="project-description">
+                            Real-time analytics dashboard with advanced data visualizations and customizable reporting features.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="Vue.js">💚</div>
+                            <div class="tech-icon" title="D3.js">📊</div>
+                            <div class="tech-icon" title="Express">🚂</div>
+                            <div class="tech-icon" title="PostgreSQL">🐘</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Data Analytics Dashboard</h3>
+                            <p class="project-full-description">
+                                A powerful analytics platform that transforms complex data into intuitive visualizations. Features real-time updates, interactive charts, and customizable dashboards for business intelligence.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Real-time data processing</li>
+                                    <li>Interactive charts and graphs</li>
+                                    <li>Customizable dashboard layouts</li>
+                                    <li>Data export and reporting</li>
+                                    <li>User-defined alerts and notifications</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="https://github.com/mohamedamine019" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Geometric Puzzle Game -->
+                <!-- <div class="project-card" data-category="frontend games" data-title="Geometric Puzzle Game" data-tags="javascript canvas howler gsap game puzzle">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=180&width=320" alt="Geometric Puzzle Game">
+                        </div>
+                        <h3 class="project-title">Geometric Puzzle Game</h3>
+                        <span class="project-category">Games</span>
+                        <p class="project-description">
+                            Brain-teasing puzzle game based on geometric principles and mathematical patterns.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="JavaScript">📜</div>
+                            <div class="tech-icon" title="Canvas API">🎨</div>
+                            <div class="tech-icon" title="Howler.js">🔊</div>
+                            <div class="tech-icon" title="GSAP">✨</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Geometric Puzzle Game</h3>
+                            <p class="project-full-description">
+                                A challenging puzzle game that combines mathematical principles with engaging gameplay. Players solve increasingly complex geometric puzzles that require spatial reasoning and logical thinking.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>50+ unique puzzle levels</li>
+                                    <li>Progressive difficulty curve</li>
+                                    <li>Geometric transformation mechanics</li>
+                                    <li>Achievement system</li>
+                                    <li>Educational math concepts</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="#" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Firebase Chat Application -->
+                <!-- <div class="project-card" data-category="firebase fullstack" data-title="Real-time Chat App" data-tags="react firebase firestore cloud functions messaging">
+                    <div class="project-card-front">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=180&width=320" alt="Real-time Chat App">
+                        </div>
+                        <h3 class="project-title">Real-time Chat App</h3>
+                        <span class="project-category">Firebase</span>
+                        <p class="project-description">
+                            Instant messaging application with real-time updates, file sharing, and group conversations.
+                        </p>
+                        <div class="project-tech-stack">
+                            <div class="tech-icon" title="React">⚛️</div>
+                            <div class="tech-icon" title="Firebase">🔥</div>
+                            <div class="tech-icon" title="Firestore">📝</div>
+                            <div class="tech-icon" title="Cloud Functions">☁️</div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-back-content">
+                            <h3 class="project-title">Real-time Chat App</h3>
+                            <p class="project-full-description">
+                                A modern chat application built with React and Firebase. Features real-time messaging, user presence indicators, file sharing, and group conversations with robust security.
+                            </p>
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Instant message delivery</li>
+                                    <li>User presence and typing indicators</li>
+                                    <li>File and image sharing</li>
+                                    <li>Group conversations and direct messages</li>
+                                    <li>Message search and history</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link demo">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                                <a href="https://github.com/mohamedamine019" class="project-link repo">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">⚙️ Skills</h2>
+            <div class="skills-orbit">
+                <div class="orbit-center">
+                    <div class="center-icon">👨‍💻</div>
+                </div>
+                <div class="orbit orbit-1">
+                    <div class="skill-icon" data-skill="React">⚛️</div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="skill-icon" data-skill="Node.js">🟢</div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="skill-icon" data-skill="Firebase">🔥</div>
+                </div>
+                <div class="orbit orbit-4">
+                    <div class="skill-icon" data-skill="SQL">🗄️</div>
+                </div>
+                <div class="orbit orbit-5">
+                    <div class="skill-icon" data-skill="TailwindCSS">🎨</div>
+                </div>
+                <div class="orbit orbit-6">
+                    <div class="skill-icon" data-skill="Git">📚</div>
+                </div>
+            </div>
+            <div class="skills-list">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React & Vue.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>TailwindCSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js & Express</li>
+                        <li>Firebase</li>
+                        <li>SQL & MongoDB</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Mathematical Modeling</li>
+                        <li>Algorithm Design</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <h2 class="section-title">🔬 Research & Publications</h2>
+            <div class="research-intro">
+                <p>My background in applied mathematics has led to several research projects and publications that bridge the gap between theoretical mathematics and practical applications in computer science.</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">📊</div>
+                    <h3>Geometric Algorithms for Web Visualization</h3>
+                    <p class="research-date">2025</p>
+                    <p class="research-description">
+                        Research on optimizing geometric algorithms for real-time web-based visualizations of complex mathematical structures.
+                    </p>
+                    <a href="#" class="research-link">Read Paper</a>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🧮</div>
+                    <h3>Applied Topology in Data Analysis</h3>
+                    <p class="research-date">2025</p>
+                    <p class="research-description">
+                        Exploration of topological data analysis techniques for extracting insights from high-dimensional datasets.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Topological_data_analysis" class="research-link">Read Paper</a>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🔄</div>
+                    <h3>Optimization Algorithms for Frontend Performance</h3>
+                    <p class="research-date">2025</p>
+                    <p class="research-description">
+                        Mathematical approach to optimizing frontend performance through advanced caching and rendering algorithms.
+                    </p>
+                    <a href="https://dev.to/woai3c/24-front-end-performance-optimization-tips-4a6c" class="research-link">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">✍️ Blog & Insights</h2>
+            <div class="blog-intro">
+                <p>I regularly write about the intersection of mathematics, computer science, and web development. Here are some of my recent articles:</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="./image/react.png?height=200&width=350" alt="Mathematical Principles in React">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 15, 2023</div>
+                        <h3 class="blog-title">Mathematical Principles in React Component Design</h3>
+                        <p class="blog-excerpt">
+                            Exploring how mathematical concepts like function composition and pure functions influence modern React development practices.
+                        </p>
+                        <a href="https://legacy.reactjs.org/docs/design-principles.html" class="blog-read-more">Read Article</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="./image/geo.png?height=200&width=350" alt="Geometric Animations with CSS">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">April 22, 2023</div>
+                        <h3 class="blog-title">Creating Complex Geometric Animations with Pure CSS</h3>
+                        <p class="blog-excerpt">
+                            A deep dive into using CSS transforms and animations to create mathematically precise geometric animations without JavaScript.
+                        </p>
+                        <a href="#" class="blog-read-more">Read Article</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="./image/algorithm.png?height=200&width=350" alt="Algorithm Optimization">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">March 8, 2023</div>
+                        <h3 class="blog-title">Algorithm Optimization Techniques for Frontend Developers</h3>
+                        <p class="blog-excerpt">
+                            Practical approaches to optimizing JavaScript algorithms using mathematical principles and computational complexity analysis.
+                        </p>
+                        <a href="#" class="blog-read-more">Read Article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="cta-button primary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">💬 Testimonials</h2>
+            <div class="testimonials-intro">
+                <p>What clients and colleagues say about my work and collaboration:</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"Amine's unique background in mathematics gives him an edge in problem-solving that few developers possess. His solutions are elegant, efficient, and built with scalability in mind."</div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="./image/wail.jpg?height=60&width=60" alt="Ouamara Wail">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Ouamara Wail</div>
+                                <div class="author-position">CTO, TechInnovate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"Working with Amine was a revelation. He approaches coding challenges with mathematical precision while maintaining a creative vision for the end product. The educational platform he built for us exceeded all expectations."</div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Michael Chen</div>
+                                <div class="author-position">Founder, EduLearn</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"Amine's ability to translate complex mathematical concepts into intuitive user interfaces is remarkable. Our data visualization project was transformed by his innovative approach and technical expertise."</div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Aisha Patel">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Aisha Patel</div>
+                                <div class="author-position">Lead Data Scientist, DataViz</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev">◀</button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Applied Mathematics</h3>
+                        <p class="timeline-date">University Studies</p>
+                        <p>Specialized in mathematical analysis, geometry, and computational methods</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Development</h3>
+                        <p class="timeline-date">Self-Taught & Bootcamps</p>
+                        <p>Mastered modern web technologies and development practices</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Continuous Learning</h3>
+                        <p class="timeline-date">Ongoing</p>
+                        <p>Always exploring new technologies and mathematical concepts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📫 Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="floating-element paper-plane">✈️</div>
+                    <div class="floating-element message-bubble">💬</div>
+                    <h3>Let's Connect</h3>
+                    <p>Ready to bring mathematical precision to your next project?</p>
+                    <div class="contact-links">
+                        <a href="mailto:haicheurmohamedamine@gmail.com" class="contact-link">
+                            <span>📧</span> Email
+                        </a>
+                        <a href="https://linkedin.com/in/amine" class="contact-link">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="https://github.com/mohamedamine019" class="contact-link">
+                            <span>🐱</span> GitHub
+                        </a>
+                    </div>
+                    <div class="availability">
+                        <h4>Current Availability</h4>
+                        <div class="availability-status available">
+                            <span class="status-indicator"></span>
+                            <span>Available for new projects</span>
+                        </div>
+                        <p class="availability-note">I'm currently accepting new projects starting from July 2023</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Project Type</option>
+                            <option value="website">Website Development</option>
+                            <option value="webapp">Web Application</option>
+                            <option value="consultation">Technical Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <span class="math-symbol">∞</span>
+                        <span>AMINE</span>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://github.com/mohamedamine019" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="https://www.instagram.com/amine.mohamed_146?igsh=MWI4cmp5MWp0N3g3eg==" class="social-link">Instagrame</a>
+                        <a href="#" class="social-link">Medium</a>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="footer-nav">
+                        <div class="footer-nav-column">
+                            <h4>Navigation</h4>
+                            <a href="#hero">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#skills">Skills</a>
+                        </div>
+                        <div class="footer-nav-column">
+                            <h4>Resources</h4>
+                            <a href="#blog">Blog</a>
+                            <a href="#research">Research</a>
+                            <a href="#">Resources</a>
+                            <a href="#">Tools</a>
+                        </div>
+                        <div class="footer-nav-column">
+                            <h4>Contact</h4>
+                            <a href="mailto:haicheurmohamedamine@gmail.com">Email</a>
+                            <a href="#contact">Contact Form</a>
+                            <a href="#">Schedule Call</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="rotating-symbol">∞</div>
+                    <p class="footer-quote">"Mathematics gave me structure, development gave me freedom."</p>
+                    <p class="footer-copyright">© 2024 HAICHEUR Mohamed Amine. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <div class="modal-close">&times;</div>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
