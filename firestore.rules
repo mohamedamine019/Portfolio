@@ -1,7 +1,33 @@
 rules_version = '2';
-
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Allow read/write access only to authenticated users (if needed)
+    // For a portfolio site, you might want to keep some data public
+    
+    // Contacts collection - allow writes from anyone (for contact form)
+    match /contacts/{contactId} {
+      allow create: if request.auth != null || 
+                    (request.resource.data.keys().hasAll(['name', 'email', 'projectType', 'message']) &&
+                    request.resource.data.name is string &&
+                    request.resource.data.email is string &&
+                    request.resource.data.projectType is string &&
+                    request.resource.data.message is string);
+      allow read, update, delete: if request.auth != null;
+    }
+    
+    // Projects collection - public read access
+    match /projects/{projectId} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null;
+    }
+    
+    // Blog posts - public read access
+    match /blog/{postId} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null;
+    }
+    
+    // Default fallback - deny all other operations
     match /{document=**} {
       allow read, write: if false;
     }
