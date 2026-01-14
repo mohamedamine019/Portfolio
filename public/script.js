@@ -1,1 +1,840 @@
-const _0x2a1bc8=_0x4d2e;(function(_0x528afb,_0xa874c7){const _0x30a0fa=_0x4d2e,_0x3fba82=_0x528afb();while(!![]){try{const _0x219aa5=parseInt(_0x30a0fa(0xcf))/0x1+parseInt(_0x30a0fa(0x9b))/0x2*(-parseInt(_0x30a0fa(0x11c))/0x3)+-parseInt(_0x30a0fa(0x99))/0x4*(parseInt(_0x30a0fa(0xd0))/0x5)+-parseInt(_0x30a0fa(0x111))/0x6+parseInt(_0x30a0fa(0x10d))/0x7*(parseInt(_0x30a0fa(0xe0))/0x8)+-parseInt(_0x30a0fa(0xab))/0x9+parseInt(_0x30a0fa(0xe1))/0xa;if(_0x219aa5===_0xa874c7)break;else _0x3fba82['push'](_0x3fba82['shift']());}catch(_0x1c0100){_0x3fba82['push'](_0x3fba82['shift']());}}}(_0x2cef,0x1bfa3));function createParticles(){const _0x2c399b=_0x4d2e,_0x5c7e0d=document[_0x2c399b(0x109)]('particles-container'),_0xacab3a=0x32;for(let _0x1a6dfd=0x0;_0x1a6dfd<_0xacab3a;_0x1a6dfd++){const _0x526d94=document['createElement'](_0x2c399b(0x113));_0x526d94[_0x2c399b(0xcc)]=_0x2c399b(0x12e),_0x526d94['style']['left']=Math[_0x2c399b(0x127)]()*0x64+'%',_0x526d94['style'][_0x2c399b(0x10e)]=Math['random']()*0x14+'s',_0x526d94['style']['animationDuration']=Math[_0x2c399b(0x127)]()*0xa+0xa+'s',_0x5c7e0d[_0x2c399b(0x11d)](_0x526d94);}}const firebaseConfig={'apiKey':_0x2a1bc8(0x12c),'authDomain':_0x2a1bc8(0xf2),'projectId':_0x2a1bc8(0x13c),'storageBucket':_0x2a1bc8(0x106),'messagingSenderId':_0x2a1bc8(0x132),'appId':'1:709687453425:web:f6e75526aac23a1a33ab50','measurementId':'G-288CNZ5BBF'};firebase[_0x2a1bc8(0x133)](firebaseConfig),firebase['analytics']();const db=firebase[_0x2a1bc8(0x11e)]();function initThemeToggle(){const _0x54cd80=_0x2a1bc8,_0x467f60=document[_0x54cd80(0xf0)](_0x54cd80(0xad)),_0x4e6075=document[_0x54cd80(0xf0)](_0x54cd80(0x102)),_0x1fa2c5=document[_0x54cd80(0xf0)](_0x54cd80(0xa9));_0x467f60[_0x54cd80(0xfa)](_0x54cd80(0xa4),()=>{const _0x3bd734=_0x54cd80;document[_0x3bd734(0xe5)]['classList'][_0x3bd734(0x92)]('light-theme'),_0x4e6075[_0x3bd734(0xf5)][_0x3bd734(0x92)](_0x3bd734(0x94)),_0x1fa2c5[_0x3bd734(0xf5)]['toggle'](_0x3bd734(0x94));const _0x284387=document[_0x3bd734(0xe5)][_0x3bd734(0xf5)][_0x3bd734(0xc3)]('light-theme');localStorage[_0x3bd734(0xdd)](_0x3bd734(0xdc),_0x284387?'light':'dark');});const _0x2cb200=localStorage[_0x54cd80(0xa3)](_0x54cd80(0xdc));_0x2cb200===_0x54cd80(0x13f)&&(document[_0x54cd80(0xe5)]['classList'][_0x54cd80(0xcb)](_0x54cd80(0x136)),_0x4e6075[_0x54cd80(0xf5)][_0x54cd80(0xcb)]('active'),_0x1fa2c5['classList'][_0x54cd80(0x13a)](_0x54cd80(0x94)));}function initMobileNav(){const _0x580874=_0x2a1bc8,_0x5148a6=document[_0x580874(0xf0)](_0x580874(0x12f)),_0x4df5c2=document['querySelector'](_0x580874(0x10a)),_0x3b7005=document['querySelectorAll']('.mobile-nav-links\x20a');_0x5148a6[_0x580874(0xfa)](_0x580874(0xa4),()=>{const _0x46d17a=_0x580874;_0x4df5c2[_0x46d17a(0xf5)][_0x46d17a(0x92)](_0x46d17a(0x94)),_0x5148a6[_0x46d17a(0xf5)][_0x46d17a(0x92)]('active');}),_0x3b7005['forEach'](_0x39d52b=>{const _0x37ac76=_0x580874;_0x39d52b[_0x37ac76(0xfa)](_0x37ac76(0xa4),()=>{const _0x4d38fc=_0x37ac76;_0x4df5c2['classList'][_0x4d38fc(0x13a)]('active'),_0x5148a6[_0x4d38fc(0xf5)][_0x4d38fc(0x13a)](_0x4d38fc(0x94));});});}function smoothScroll(){const _0x502960=_0x2a1bc8,_0x519728=document['querySelectorAll']('a[href^=\x22#\x22]');_0x519728[_0x502960(0xc5)](_0x19c9b0=>{const _0x4aaa2f=_0x502960;_0x19c9b0[_0x4aaa2f(0xfa)](_0x4aaa2f(0xa4),function(_0x56f57c){const _0x402837=_0x4aaa2f;_0x56f57c[_0x402837(0xac)]();const _0x84d86f=this['getAttribute']('href'),_0x1df32e=document[_0x402837(0xf0)](_0x84d86f);_0x1df32e&&_0x1df32e['scrollIntoView']({'behavior':'smooth','block':_0x402837(0xa2)});});});}function handleScrollAnimations(){const _0x513f5a=_0x2a1bc8,_0x26cfe1={'threshold':0.1,'rootMargin':'0px\x200px\x20-50px\x200px'},_0x170e5c=new IntersectionObserver(_0x5151fc=>{const _0x5df72d=_0x4d2e;_0x5151fc[_0x5df72d(0xc5)](_0x4179f8=>{const _0x16542d=_0x5df72d;_0x4179f8['isIntersecting']&&_0x4179f8[_0x16542d(0xb9)][_0x16542d(0xf5)][_0x16542d(0xcb)]('visible');});},_0x26cfe1),_0x54c0b2=document[_0x513f5a(0xd4)](_0x513f5a(0xb8));_0x54c0b2[_0x513f5a(0xc5)]((_0x7f1ccd,_0x2af0bf)=>{const _0x277a29=_0x513f5a;_0x7f1ccd[_0x277a29(0xf5)][_0x277a29(0xcb)](_0x277a29(0xaa)),_0x170e5c[_0x277a29(0x135)](_0x7f1ccd);});}function initStatsCounter(){const _0x497423=_0x2a1bc8,_0x3a383e=document[_0x497423(0xd4)](_0x497423(0xef)),_0x4315db={'threshold':0.5},_0x332796=new IntersectionObserver(_0x37f3ab=>{const _0x30eaad=_0x497423;_0x37f3ab[_0x30eaad(0xc5)](_0x38d79c=>{const _0x332fac=_0x30eaad;if(_0x38d79c[_0x332fac(0x105)]){const _0x492ab0=_0x38d79c[_0x332fac(0xb9)],_0x17abe5=Number[_0x332fac(0xf7)](_0x492ab0[_0x332fac(0x93)]('data-count'));animateCounter(_0x492ab0,_0x17abe5),_0x332796[_0x332fac(0xb4)](_0x492ab0);}});},_0x4315db);_0x3a383e[_0x497423(0xc5)](_0x5c7ba7=>{const _0x90c68d=_0x497423;_0x332796[_0x90c68d(0x135)](_0x5c7ba7);});}function animateCounter(_0x5ca557,_0x1f539c){let _0x3f9239=0x0;const _0x80b168=_0x1f539c/0x32,_0x10d62b=setInterval(()=>{_0x3f9239+=_0x80b168,_0x3f9239>=_0x1f539c&&(_0x3f9239=_0x1f539c,clearInterval(_0x10d62b)),_0x5ca557['textContent']=Math['floor'](_0x3f9239);},0x32);}function initSkillsOrbit(){const _0x24d5d1=_0x2a1bc8,_0x57e604=document[_0x24d5d1(0xd4)]('.skill-icon');_0x57e604['forEach'](_0x59f7f7=>{const _0x37bc34=_0x24d5d1;_0x59f7f7[_0x37bc34(0xfa)]('mouseenter',function(){const _0x50bf80=_0x37bc34,_0x119db5=this[_0x50bf80(0x93)](_0x50bf80(0x9a)),_0x198497=document[_0x50bf80(0xe9)](_0x50bf80(0x113));_0x198497[_0x50bf80(0xcc)]=_0x50bf80(0xff),_0x198497[_0x50bf80(0xca)]=_0x119db5,_0x198497['style']['cssText']=_0x50bf80(0xfe),this['appendChild'](_0x198497);}),_0x59f7f7['addEventListener']('mouseleave',function(){const _0x27dded=_0x37bc34,_0x1d0b2c=this[_0x27dded(0xf0)](_0x27dded(0xba));_0x1d0b2c&&_0x1d0b2c[_0x27dded(0x13a)]();});});}function initContactForm(){const _0x252b52=_0x2a1bc8,_0x2add45=document[_0x252b52(0xf0)]('.contact-form');if(!_0x2add45)return;let _0x1990e7=document[_0x252b52(0xf0)](_0x252b52(0xa0));!_0x1990e7&&(_0x1990e7=document['createElement'](_0x252b52(0x113)),_0x1990e7[_0x252b52(0xcc)]='toast-container',document['body']['appendChild'](_0x1990e7)),_0x2add45[_0x252b52(0xfa)](_0x252b52(0xb1),async _0x3f367=>{const _0x210758=_0x252b52;_0x3f367['preventDefault']();const _0x13d27d=_0x2add45['querySelector'](_0x210758(0x107))['value']['trim'](),_0x1282ea=_0x2add45[_0x210758(0xf0)](_0x210758(0xd1))[_0x210758(0x129)][_0x210758(0x121)](),_0x5e3a72=_0x2add45['querySelector'](_0x210758(0x9c))[_0x210758(0x129)],_0x455e7f=_0x2add45[_0x210758(0xf0)]('textarea')[_0x210758(0x129)]['trim']();try{await db[_0x210758(0xa7)](_0x210758(0x137))[_0x210758(0xcb)]({'name':_0x13d27d,'email':_0x1282ea,'projectType':_0x5e3a72,'message':_0x455e7f,'timestamp':firebase[_0x210758(0x11e)][_0x210758(0x100)][_0x210758(0xd6)]()}),showToast('success',_0x210758(0xbd),_0x210758(0xea)),_0x2add45[_0x210758(0x112)]();}catch(_0xb62993){showToast('error',_0x210758(0x97),_0x210758(0xc1)),console[_0x210758(0xd2)](_0xb62993);}});}function showToast(_0x24efe4,_0xb463b1,_0x424ddf){const _0x20853c=_0x2a1bc8,_0x11be6b=document[_0x20853c(0xe9)](_0x20853c(0x113));_0x11be6b['className']=_0x20853c(0xb3)+_0x24efe4,_0x11be6b['innerHTML']=_0x20853c(0x11a)+_0xb463b1+_0x20853c(0xb5)+_0x424ddf+_0x20853c(0xfc);const _0x3b17dd=document[_0x20853c(0xf0)](_0x20853c(0xa0));_0x3b17dd[_0x20853c(0x11d)](_0x11be6b);const _0x1a51e3=_0x11be6b['querySelector'](_0x20853c(0x12a));_0x1a51e3[_0x20853c(0xfa)](_0x20853c(0xa4),()=>{const _0x2b86b4=_0x20853c;_0x11be6b[_0x2b86b4(0xf5)][_0x2b86b4(0xcb)]('toast-fade-out'),setTimeout(()=>_0x11be6b[_0x2b86b4(0x13a)](),0x12c);}),setTimeout(()=>{const _0x46295c=_0x20853c;_0x11be6b[_0x46295c(0xf5)][_0x46295c(0xcb)](_0x46295c(0xf3)),setTimeout(()=>_0x11be6b['remove'](),0x12c);},0x1388);}function initHeroCTA(){const _0x65b70d=_0x2a1bc8,_0x4e4f08=document[_0x65b70d(0xf0)](_0x65b70d(0x95)),_0x3a0c26=document[_0x65b70d(0xf0)](_0x65b70d(0x114));_0x4e4f08[_0x65b70d(0xfa)](_0x65b70d(0xa4),()=>{const _0x21c2b3=_0x65b70d;document[_0x21c2b3(0xf0)](_0x21c2b3(0xf9))['scrollIntoView']({'behavior':'smooth'});}),_0x3a0c26[_0x65b70d(0xfa)](_0x65b70d(0xa4),()=>{const _0x587754=_0x65b70d,_0x43384f=document[_0x587754(0xe9)]('a');_0x43384f['href']='#',_0x43384f[_0x587754(0x117)]=_0x587754(0x13d),_0x43384f[_0x587754(0xa4)]();});}function initParallax(){const _0x27897a=_0x2a1bc8;window['addEventListener'](_0x27897a(0xed),()=>{const _0x4819b4=_0x27897a,_0x1811c=window[_0x4819b4(0x116)],_0x94e750=document['querySelectorAll'](_0x4819b4(0xc2));_0x94e750[_0x4819b4(0xc5)](_0x2094ea=>{const _0xe84392=_0x4819b4,_0x498ad8=0.5;_0x2094ea[_0xe84392(0x119)][_0xe84392(0x145)]='translate(-50%,\x20-50%)\x20translateY('+_0x1811c*_0x498ad8+_0xe84392(0xbf);});});}function updateNavigation(){const _0x2c7309=_0x2a1bc8,_0x465eb9=document[_0x2c7309(0xd4)](_0x2c7309(0xcd)),_0x18de37=document['querySelectorAll'](_0x2c7309(0x144));window[_0x2c7309(0xfa)](_0x2c7309(0xed),()=>{const _0x258680=_0x2c7309;let _0x50508b='';_0x465eb9['forEach'](_0x3c671d=>{const _0x53d0c1=_0x4d2e,_0x417f9c=_0x3c671d[_0x53d0c1(0x138)],_0x138297=_0x3c671d[_0x53d0c1(0x10c)];window[_0x53d0c1(0x116)]>=_0x417f9c-0xc8&&(_0x50508b=_0x3c671d[_0x53d0c1(0x93)]('id'));}),_0x18de37[_0x258680(0xc5)](_0xdc6bff=>{const _0x38b0c4=_0x258680;_0xdc6bff[_0x38b0c4(0xf5)][_0x38b0c4(0x13a)]('active'),_0xdc6bff[_0x38b0c4(0x93)](_0x38b0c4(0xfd))==='#'+_0x50508b&&_0xdc6bff[_0x38b0c4(0xf5)]['add'](_0x38b0c4(0x94));});});}function _0x4d2e(_0x43a4fa,_0x2be1f1){const _0x2cef1d=_0x2cef();return _0x4d2e=function(_0x4d2e30,_0x208d19){_0x4d2e30=_0x4d2e30-0x91;let _0x4d9169=_0x2cef1d[_0x4d2e30];return _0x4d9169;},_0x4d2e(_0x43a4fa,_0x2be1f1);}function initTypingEffect(){const _0x4ab953=_0x2a1bc8,_0x226ea8=document[_0x4ab953(0xf0)](_0x4ab953(0xc9)),_0x4f22e9='Welcome\x20to\x20my\x20world\x20–\x20where\x20logic\x20meets\x20creativity.';let _0x4e8cb4=0x0;_0x226ea8['textContent']='';function _0x491571(){const _0x154e63=_0x4ab953;_0x4e8cb4<_0x4f22e9[_0x154e63(0xb7)]&&(_0x226ea8[_0x154e63(0xca)]+=_0x4f22e9[_0x154e63(0xc8)](_0x4e8cb4),_0x4e8cb4++,setTimeout(_0x491571,0x32));}setTimeout(_0x491571,0x7d0);}function initProjectFilters(){const _0x15a83e=_0x2a1bc8,_0x4103f0=document['querySelectorAll'](_0x15a83e(0xc6)),_0x47cde8=document['querySelectorAll'](_0x15a83e(0xeb)),_0x1de96d=document[_0x15a83e(0xf0)]('.projects-grid'),_0x8e8a30=document[_0x15a83e(0x109)]('project-search');function _0x1f9048(_0x1618d5,_0x14d688=''){const _0x1c9883=_0x15a83e;let _0x426ad2=![];_0x47cde8[_0x1c9883(0xc5)](_0xa3d8fd=>{const _0x3bd008=_0x1c9883,_0xca9272=_0xa3d8fd[_0x3bd008(0xc7)][_0x3bd008(0x140)][_0x3bd008(0xa6)]('\x20'),_0x3c7da5=_0xa3d8fd[_0x3bd008(0xc7)]['title'][_0x3bd008(0xd5)](),_0x541864=_0xa3d8fd[_0x3bd008(0xc7)][_0x3bd008(0x118)][_0x3bd008(0xd5)](),_0x482989=_0x1618d5===_0x3bd008(0xbe)||_0xca9272['includes'](_0x1618d5),_0x392c14=_0x14d688===''||_0x3c7da5[_0x3bd008(0xf8)](_0x14d688[_0x3bd008(0xd5)]())||_0x541864[_0x3bd008(0xf8)](_0x14d688[_0x3bd008(0xd5)]());_0x482989&&_0x392c14?(_0xa3d8fd[_0x3bd008(0x119)][_0x3bd008(0xd3)]=_0x3bd008(0xf6),_0x426ad2=!![],setTimeout(()=>{const _0x2342ca=_0x3bd008;_0xa3d8fd[_0x2342ca(0x119)][_0x2342ca(0x12b)]='1',_0xa3d8fd[_0x2342ca(0x119)][_0x2342ca(0x145)]=_0x2342ca(0xc4);},0x64)):(_0xa3d8fd[_0x3bd008(0x119)][_0x3bd008(0xd3)]=_0x3bd008(0xda),_0xa3d8fd[_0x3bd008(0x119)][_0x3bd008(0x12b)]='0',_0xa3d8fd[_0x3bd008(0x119)][_0x3bd008(0x145)]='translateY(20px)');});let _0x1ab452=document[_0x1c9883(0xf0)](_0x1c9883(0xa8));if(!_0x426ad2)!_0x1ab452&&(_0x1ab452=document[_0x1c9883(0xe9)]('div'),_0x1ab452['className']='no-projects',_0x1ab452[_0x1c9883(0x124)]=_0x1c9883(0x120),_0x1de96d['appendChild'](_0x1ab452)),_0x1ab452[_0x1c9883(0x119)][_0x1c9883(0xd3)]=_0x1c9883(0xf6);else _0x1ab452&&(_0x1ab452[_0x1c9883(0x119)]['display']=_0x1c9883(0xda));}_0x4103f0[_0x15a83e(0xc5)](_0xab9d5e=>{const _0x3e509c=_0x15a83e;_0xab9d5e['addEventListener'](_0x3e509c(0xa4),()=>{const _0x1949f0=_0x3e509c;_0x4103f0[_0x1949f0(0xc5)](_0x3cfc15=>_0x3cfc15['classList']['remove'](_0x1949f0(0x94))),_0xab9d5e['classList'][_0x1949f0(0xcb)](_0x1949f0(0x94));const _0x5673a3=_0xab9d5e[_0x1949f0(0x93)](_0x1949f0(0x9d)),_0x5ddc29=_0x8e8a30['value'];_0x1f9048(_0x5673a3,_0x5ddc29);});}),_0x8e8a30['addEventListener'](_0x15a83e(0x91),_0x69440b=>{const _0x12835e=_0x15a83e,_0x6605f8=_0x69440b[_0x12835e(0xb9)][_0x12835e(0x129)],_0x330917=document[_0x12835e(0xf0)](_0x12835e(0x98))[_0x12835e(0x93)](_0x12835e(0x9d));_0x1f9048(_0x330917,_0x6605f8);}),_0x1f9048(_0x15a83e(0xbe)),_0x47cde8[_0x15a83e(0xc5)](_0x528f2b=>{const _0x111baf=_0x15a83e;_0x528f2b[_0x111baf(0x119)][_0x111baf(0x125)]=_0x111baf(0x131);const _0x38e1b6=Math[_0x111baf(0x127)]()*0x2;_0x528f2b['style'][_0x111baf(0x10e)]=_0x38e1b6+'s',_0x528f2b[_0x111baf(0xfa)]('mouseenter',()=>{const _0x57ed06=_0x111baf;_0x528f2b['style'][_0x57ed06(0x104)]=_0x57ed06(0xbc);}),_0x528f2b[_0x111baf(0xfa)](_0x111baf(0xaf),()=>{const _0x2d4ee8=_0x111baf;_0x528f2b[_0x2d4ee8(0x119)]['boxShadow']=_0x2d4ee8(0xf4);});});}function initTestimonialsSlider(){const _0x2190c9=_0x2a1bc8,_0x6efbb7=document[_0x2190c9(0xf0)](_0x2190c9(0x130)),_0x112f40=document[_0x2190c9(0xf0)]('.testimonial-prev'),_0x495a7d=document[_0x2190c9(0xf0)](_0x2190c9(0xe4)),_0x1bd269=document[_0x2190c9(0xd4)](_0x2190c9(0xb2));let _0x271daf=0x0;const _0xb44ab6=_0x1bd269['length'];function _0x664938(){const _0x483f39=_0x2190c9;_0x6efbb7[_0x483f39(0x119)][_0x483f39(0x145)]=_0x483f39(0xe8)+_0x271daf*0x64+'%)',_0x1bd269[_0x483f39(0xc5)]((_0xd11518,_0x1db018)=>{const _0x567ff6=_0x483f39;_0xd11518[_0x567ff6(0xf5)][_0x567ff6(0x92)](_0x567ff6(0x94),_0x1db018===_0x271daf);});}function _0x552799(){_0x271daf=(_0x271daf+0x1)%_0xb44ab6,_0x664938();}function _0xc6f67f(){_0x271daf=(_0x271daf-0x1+_0xb44ab6)%_0xb44ab6,_0x664938();}_0x495a7d[_0x2190c9(0xfa)](_0x2190c9(0xa4),_0x552799),_0x112f40['addEventListener'](_0x2190c9(0xa4),_0xc6f67f),_0x1bd269[_0x2190c9(0xc5)]((_0x290851,_0x68142d)=>{const _0x22fccc=_0x2190c9;_0x290851['addEventListener'](_0x22fccc(0xa4),()=>{_0x271daf=_0x68142d,_0x664938();});}),setInterval(_0x552799,0x1388);}function initProjectModal(){const _0x1aab79=_0x2a1bc8,_0x5551a3=document[_0x1aab79(0xf0)]('.project-modal'),_0x4471db=document['querySelector'](_0x1aab79(0xe6)),_0x4fb79e=document[_0x1aab79(0xd4)](_0x1aab79(0xeb));_0x4471db[_0x1aab79(0xfa)](_0x1aab79(0xa4),()=>{const _0x1ad5e4=_0x1aab79;_0x5551a3[_0x1ad5e4(0xf5)][_0x1ad5e4(0x13a)](_0x1ad5e4(0x94));}),_0x5551a3[_0x1aab79(0xfa)](_0x1aab79(0xa4),_0x199870=>{const _0x4ce038=_0x1aab79;_0x199870['target']===_0x5551a3&&_0x5551a3[_0x4ce038(0xf5)][_0x4ce038(0x13a)](_0x4ce038(0x94));}),_0x4fb79e['forEach'](_0x4209d2=>{const _0x4f8774=_0x1aab79;_0x4209d2['addEventListener'](_0x4f8774(0xec),()=>{const _0x4eb649=_0x4f8774;_0x5551a3[_0x4eb649(0xf5)][_0x4eb649(0xcb)](_0x4eb649(0x94));});});}function initTouchSupport(){const _0x5ae7c3=_0x2a1bc8,_0x5c3655=document['querySelectorAll'](_0x5ae7c3(0xeb));_0x5c3655[_0x5ae7c3(0xc5)](_0x155659=>{const _0x344ecd=_0x5ae7c3;let _0x4c694f=0x0;_0x155659[_0x344ecd(0xfa)](_0x344ecd(0xb0),_0x3b798c=>{const _0x5c8538=_0x344ecd;_0x4c694f=Date[_0x5c8538(0x141)]();}),_0x155659[_0x344ecd(0xfa)](_0x344ecd(0xae),_0x201ed0=>{const _0x1c38f3=_0x344ecd,_0x3be4e8=Date[_0x1c38f3(0x141)]()-_0x4c694f;_0x3be4e8<0x12c&&(_0x201ed0[_0x1c38f3(0xac)](),_0x155659[_0x1c38f3(0xf5)][_0x1c38f3(0x92)]('touched'),_0x5c3655[_0x1c38f3(0xc5)](_0x4bf03d=>{const _0x4726e4=_0x1c38f3;_0x4bf03d!==_0x155659&&_0x4bf03d[_0x4726e4(0xf5)][_0x4726e4(0x13a)](_0x4726e4(0xfb));}));});}),document[_0x5ae7c3(0xfa)](_0x5ae7c3(0xb0),_0xcfd74e=>{const _0x538531=_0x5ae7c3;!_0xcfd74e[_0x538531(0xb9)]['closest'](_0x538531(0xeb))&&_0x5c3655[_0x538531(0xc5)](_0x547aa0=>{const _0x96f3c8=_0x538531;_0x547aa0[_0x96f3c8(0xf5)][_0x96f3c8(0x13a)](_0x96f3c8(0xfb));});});}function handleResponsiveNav(){const _0x527196=_0x2a1bc8,_0x1c3837=document['querySelector'](_0x527196(0x12f)),_0x1d259a=document['querySelector'](_0x527196(0x10a)),_0x18ccc6=document['querySelectorAll'](_0x527196(0x144));window[_0x527196(0xfa)](_0x527196(0xde),()=>{const _0x875237=_0x527196;window['innerWidth']>0x300&&(_0x1d259a[_0x875237(0xf5)][_0x875237(0x13a)](_0x875237(0x94)),_0x1c3837[_0x875237(0xf5)][_0x875237(0x13a)]('active'));}),_0x18ccc6[_0x527196(0xc5)](_0x558c3d=>{const _0x507960=_0x527196;_0x558c3d[_0x507960(0xfa)](_0x507960(0xa4),()=>{const _0x3e767b=_0x507960;window[_0x3e767b(0x122)]<=0x300&&(_0x1d259a[_0x3e767b(0xf5)][_0x3e767b(0x13a)](_0x3e767b(0x94)),_0x1c3837[_0x3e767b(0xf5)]['remove'](_0x3e767b(0x94)));});});}function handleResponsiveSkillsOrbit(){const _0x5111c0=_0x2a1bc8,_0x1d3207=document[_0x5111c0(0xf0)](_0x5111c0(0x103));function _0x1629c4(){const _0x13cf28=_0x5111c0,_0x386730=window['innerWidth'];let _0xdc4562=0x190;if(_0x386730<=0x1e0)_0xdc4562=0xdc;else{if(_0x386730<=0x240)_0xdc4562=0xfa;else{if(_0x386730<=0x300)_0xdc4562=0x118;else{if(_0x386730<=0x3e0)_0xdc4562=0x140;else _0x386730<=0x4b0&&(_0xdc4562=0x15e);}}}_0x1d3207&&(_0x1d3207[_0x13cf28(0x119)][_0x13cf28(0x126)]=_0xdc4562+'px',_0x1d3207[_0x13cf28(0x119)][_0x13cf28(0x108)]=_0xdc4562+'px');}_0x1629c4(),window[_0x5111c0(0xfa)]('resize',_0x1629c4);}function handleResponsiveTestimonials(){const _0x44aea3=_0x2a1bc8,_0x565fd4=document['querySelectorAll'](_0x44aea3(0xd7));function _0x134900(){const _0x4a1fc5=_0x44aea3,_0xe369c9=window[_0x4a1fc5(0x122)];_0x565fd4[_0x4a1fc5(0xc5)](_0x26bcf3=>{const _0x18f0a7=_0x4a1fc5;if(_0xe369c9<=0x1e0)_0x26bcf3['style'][_0x18f0a7(0x13b)]=_0x18f0a7(0xe7);else _0xe369c9<=0x300?_0x26bcf3[_0x18f0a7(0x119)][_0x18f0a7(0x13b)]='1.5rem\x201rem':_0x26bcf3[_0x18f0a7(0x119)]['padding']=_0x18f0a7(0x10b);});}_0x134900(),window[_0x44aea3(0xfa)](_0x44aea3(0xde),_0x134900);}function _0x2cef(){const _0x5d86ee=['.stat-number','querySelector','90vh','haicheur-amine-portfolio.firebaseapp.com','toast-fade-out','0\x2010px\x2020px\x20rgba(0,\x200,\x200,\x200.2)','classList','block','parseInt','includes','#projects','addEventListener','touched','</p>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<button\x20class=\x22toast-close\x22>×</button>\x0a\x20\x20','href','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--glass-bg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20backdrop-filter:\x20blur(10px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--accent-cyan);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200.5rem\x201rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--text-primary);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x200.9rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translate(-50%,\x20-120%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','skill-tooltip','FieldValue','animationDuration','.light-mode','.skills-orbit','boxShadow','isIntersecting','haicheur-amine-portfolio.firebasestorage.app','input[type=\x22text\x22]','height','getElementById','.mobile-nav','3rem','clientHeight','805833rfWGDE','animationDelay','2.5vh\x20auto','maxWidth','331656wyLVgU','reset','div','.cta-button.secondary','.particle','pageYOffset','download','tags','style','\x0a\x20\x20\x20\x20<div\x20class=\x22toast-content\x22>\x0a\x20\x20\x20\x20\x20\x20<h4>','.project-modal','123273tlMlfA','appendChild','firestore','loaded','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>No\x20projects\x20found</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>No\x20projects\x20match\x20the\x20selected\x20filter\x20or\x20search\x20term.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','trim','innerWidth','setProperty','innerHTML','transition','width','random','95vw','value','.toast-close','opacity','AIzaSyAmPf8qzMm7r5w7e8pBNAtgqw9LubBy9_c','maxHeight','particle','.mobile-menu-btn','.testimonials-track','transform\x200.8s\x20cubic-bezier(0.175,\x200.885,\x200.32,\x201.275),\x20box-shadow\x200.3s\x20ease,\x20opacity\x200.5s\x20ease','709687453425','initializeApp','0.5','observe','light-theme','contacts','offsetTop','translate(-50%,\x20-50%)','remove','padding','haicheur-amine-portfolio','HAICHEUR_Mohamed_Amine_CV.pdf','alt','light','category','now','left','keydown','.nav-links\x20a,\x20.mobile-nav-links\x20a','transform','input','toggle','getAttribute','active','.cta-button.primary','opacity\x201s\x20ease','❌\x20Message\x20Failed\x20to\x20Send','.filter-btn.active','348phSGlT','data-skill','10zPHVMd','select','data-filter','fontSize','5vh\x20auto','.toast-container','innerHeight','start','getItem','click','16px','split','collection','.no-projects','.dark-mode','fade-in','575442DzaLll','preventDefault','.theme-toggle','touchend','mouseleave','touchstart','submit','.dot','toast\x20toast-','unobserve','</h4>\x0a\x20\x20\x20\x20\x20\x20<p>','particles-container','length','.section-title,\x20.project-tile,\x20.skill-category,\x20.timeline-item,\x20.contact-info,\x20.contact-form,\x20.research-card,\x20.blog-card,\x20.testimonial-card','target','.skill-tooltip','Escape','0\x2015px\x2030px\x20rgba(0,\x20255,\x20255,\x200.2)','✨\x20Message\x20Sent\x20Successfully!','all','px)','DOMContentLoaded','Please\x20try\x20again\x20or\x20contact\x20me\x20directly\x20via\x20email.','.tesseract','contains','translateY(0)','forEach','.filter-btn','dataset','charAt','.hero-welcome','textContent','add','className','section[id]','90vw','11213gaRoLQ','10555vlILfl','input[type=\x22email\x22]','error','display','querySelectorAll','toLowerCase','serverTimestamp','.testimonial-card','body','95vh','none','--vh','theme','setItem','resize','Image\x20not\x20available','8Ssjqdc','4965890BzoaTn','orientationchange','margin','.testimonial-next','documentElement','.modal-close','1rem','translateX(-','createElement','Thank\x20you\x20for\x20reaching\x20out.\x20I\x20will\x20get\x20back\x20to\x20you\x20soon.','.project-card','dblclick','scroll','load'];_0x2cef=function(){return _0x5d86ee;};return _0x2cef();}function handleResponsiveParticles(){const _0x2030db=_0x2a1bc8,_0x562fab=document[_0x2030db(0x109)](_0x2030db(0xb6));function _0x4a8b31(){const _0x369e5c=_0x2030db,_0x42e540=window[_0x369e5c(0x122)];let _0x475266=0x32;if(_0x42e540<=0x1e0)_0x475266=0x14;else{if(_0x42e540<=0x300)_0x475266=0x1e;else _0x42e540<=0x3e0&&(_0x475266=0x28);}_0x562fab[_0x369e5c(0x124)]='';for(let _0x2db01c=0x0;_0x2db01c<_0x475266;_0x2db01c++){const _0x8a3db6=document['createElement'](_0x369e5c(0x113));_0x8a3db6[_0x369e5c(0xcc)]=_0x369e5c(0x12e),_0x8a3db6[_0x369e5c(0x119)][_0x369e5c(0x142)]=Math[_0x369e5c(0x127)]()*0x64+'%',_0x8a3db6[_0x369e5c(0x119)]['animationDelay']=Math[_0x369e5c(0x127)]()*0x14+'s',_0x8a3db6['style'][_0x369e5c(0x101)]=Math[_0x369e5c(0x127)]()*0xa+0xa+'s',_0x562fab['appendChild'](_0x8a3db6);}}_0x4a8b31(),window[_0x2030db(0xfa)]('resize',_0x4a8b31);}function handleResponsiveModal(){const _0x2b5c6f=_0x2a1bc8,_0x4d6fa2=document[_0x2b5c6f(0xf0)](_0x2b5c6f(0x11b)),_0x1a7034=document['querySelector']('.modal-content');function _0x3f510e(){const _0x2b26d5=_0x2b5c6f,_0x7565b1=window[_0x2b26d5(0x122)],_0x16f453=window['innerHeight'];_0x1a7034&&(_0x7565b1<=0x300?(_0x1a7034[_0x2b26d5(0x119)][_0x2b26d5(0x110)]=_0x2b26d5(0x128),_0x1a7034[_0x2b26d5(0x119)]['maxHeight']=_0x2b26d5(0xd9),_0x1a7034[_0x2b26d5(0x119)][_0x2b26d5(0xe3)]=_0x2b26d5(0x10f)):(_0x1a7034[_0x2b26d5(0x119)]['maxWidth']=_0x2b26d5(0xce),_0x1a7034[_0x2b26d5(0x119)][_0x2b26d5(0x12d)]=_0x2b26d5(0xf1),_0x1a7034[_0x2b26d5(0x119)][_0x2b26d5(0xe3)]=_0x2b26d5(0x9f)));}_0x3f510e(),window[_0x2b5c6f(0xfa)](_0x2b5c6f(0xde),_0x3f510e);}function handleResponsiveFonts(){function _0x389d9b(){const _0x2532b4=_0x4d2e,_0x586a66=window[_0x2532b4(0x122)],_0x130fa6=document[_0x2532b4(0xe5)];if(_0x586a66<=0x168)_0x130fa6[_0x2532b4(0x119)][_0x2532b4(0x9e)]='14px';else{if(_0x586a66<=0x1e0)_0x130fa6['style']['fontSize']='15px';else _0x586a66<=0x300?_0x130fa6[_0x2532b4(0x119)][_0x2532b4(0x9e)]=_0x2532b4(0xa5):_0x130fa6[_0x2532b4(0x119)][_0x2532b4(0x9e)]=_0x2532b4(0xa5);}}_0x389d9b(),window['addEventListener']('resize',_0x389d9b);}function handleResponsiveImages(){const _0x58a2b7=_0x2a1bc8,_0x3dfc16=document[_0x58a2b7(0xd4)]('img');_0x3dfc16['forEach'](_0xa624d=>{const _0x2de0e0=_0x58a2b7;_0xa624d[_0x2de0e0(0xfa)](_0x2de0e0(0xee),()=>{const _0x1b97df=_0x2de0e0;_0xa624d[_0x1b97df(0x119)][_0x1b97df(0x12b)]='1';}),_0xa624d[_0x2de0e0(0xfa)]('error',()=>{const _0x292dd7=_0x2de0e0;_0xa624d[_0x292dd7(0x119)][_0x292dd7(0x12b)]=_0x292dd7(0x134),_0xa624d[_0x292dd7(0x13e)]=_0x292dd7(0xdf);});});}function optimizeForMobile(){const _0x1ef030=_0x2a1bc8,_0x8e1e55=window[_0x1ef030(0x122)]<=0x300;if(_0x8e1e55){const _0x12d085=document[_0x1ef030(0xf0)](_0x1ef030(0xc2));_0x12d085&&(_0x12d085[_0x1ef030(0x119)][_0x1ef030(0x101)]='30s');const _0x12bd36=document[_0x1ef030(0xd4)](_0x1ef030(0xc2));_0x12bd36['forEach'](_0x99d60b=>{const _0x583a4e=_0x1ef030;_0x99d60b[_0x583a4e(0x119)][_0x583a4e(0x145)]=_0x583a4e(0x139);});}}document[_0x2a1bc8(0xfa)](_0x2a1bc8(0xc0),()=>{const _0x3f3b67=_0x2a1bc8;createParticles(),initThemeToggle(),initMobileNav(),smoothScroll(),handleScrollAnimations(),initStatsCounter(),initSkillsOrbit(),initContactForm(),initHeroCTA(),initParallax(),updateNavigation(),initTypingEffect(),initProjectFilters(),initTestimonialsSlider(),initProjectModal(),document[_0x3f3b67(0xd8)][_0x3f3b67(0x119)]['opacity']='0',setTimeout(()=>{const _0x14ed27=_0x3f3b67;document[_0x14ed27(0xd8)]['style'][_0x14ed27(0x125)]=_0x14ed27(0x96),document[_0x14ed27(0xd8)][_0x14ed27(0x119)][_0x14ed27(0x12b)]='1';},0x64),initTouchSupport(),handleResponsiveNav(),handleResponsiveSkillsOrbit(),handleResponsiveTestimonials(),handleResponsiveParticles(),handleResponsiveModal(),handleResponsiveFonts(),handleResponsiveImages(),optimizeForMobile();}),window[_0x2a1bc8(0xfa)](_0x2a1bc8(0xee),()=>{const _0x11a3cd=_0x2a1bc8;document['body']['classList'][_0x11a3cd(0xcb)](_0x11a3cd(0x11f));}),window[_0x2a1bc8(0xfa)](_0x2a1bc8(0xde),()=>{const _0x1d3790=_0x2a1bc8,_0x42c9bf=document[_0x1d3790(0xd4)](_0x1d3790(0x115));_0x42c9bf[_0x1d3790(0xc5)](_0x9a29b3=>{const _0x5a5112=_0x1d3790;_0x9a29b3[_0x5a5112(0x119)]['left']=Math[_0x5a5112(0x127)]()*0x64+'%';});}),document[_0x2a1bc8(0xfa)](_0x2a1bc8(0x143),_0xc82a61=>{const _0x48ec4a=_0x2a1bc8;if(_0xc82a61['key']===_0x48ec4a(0xbb)){const _0x55747b=document[_0x48ec4a(0xf0)](_0x48ec4a(0x11b)),_0x322243=document['querySelector']('.mobile-nav');_0x55747b[_0x48ec4a(0xf5)][_0x48ec4a(0xc3)]('active')&&_0x55747b['classList'][_0x48ec4a(0x13a)](_0x48ec4a(0x94)),_0x322243[_0x48ec4a(0xf5)][_0x48ec4a(0xc3)]('active')&&(_0x322243['classList'][_0x48ec4a(0x13a)](_0x48ec4a(0x94)),document[_0x48ec4a(0xf0)](_0x48ec4a(0x12f))[_0x48ec4a(0xf5)][_0x48ec4a(0x13a)](_0x48ec4a(0x94)));}}),window[_0x2a1bc8(0xfa)](_0x2a1bc8(0xe2),()=>{setTimeout(()=>{handleResponsiveSkillsOrbit(),handleResponsiveTestimonials(),handleResponsiveParticles(),optimizeForMobile();},0x64);});const vh=window[_0x2a1bc8(0xa1)]*0.01;document[_0x2a1bc8(0xe5)][_0x2a1bc8(0x119)][_0x2a1bc8(0x123)](_0x2a1bc8(0xdb),vh+'px'),window[_0x2a1bc8(0xfa)]('resize',()=>{const _0x53b981=_0x2a1bc8,_0x2f6cb8=window[_0x53b981(0xa1)]*0.01;document[_0x53b981(0xe5)][_0x53b981(0x119)][_0x53b981(0x123)](_0x53b981(0xdb),_0x2f6cb8+'px');});
+// Particle System
+function createParticles() {
+  const container = document.getElementById("particles-container")
+  const particleCount = 50
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement("div")
+    particle.className = "particle"
+    particle.style.left = Math.random() * 100 + "%"
+    particle.style.animationDelay = Math.random() * 20 + "s"
+    particle.style.animationDuration = Math.random() * 10 + 10 + "s"
+    container.appendChild(particle)
+  }
+}
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAmPf8qzMm7r5w7e8pBNAtgqw9LubBy9_c",
+  authDomain: "haicheur-amine-portfolio.firebaseapp.com",
+  projectId: "haicheur-amine-portfolio",
+  storageBucket: "haicheur-amine-portfolio.firebasestorage.app",
+  messagingSenderId: "709687453425",
+  appId: "1:709687453425:web:f6e75526aac23a1a33ab50",
+  measurementId: "G-288CNZ5BBF"
+};
+
+// Initialize Firebase using the global firebase object
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+const db = firebase.firestore();
+
+// Theme Toggle
+function initThemeToggle() {
+  const themeToggle = document.querySelector(".theme-toggle")
+  const lightIcon = document.querySelector(".light-mode")
+  const darkIcon = document.querySelector(".dark-mode")
+
+  themeToggle.addEventListener("click", () => {
+    document.documentElement.classList.toggle("light-theme")
+    lightIcon.classList.toggle("active")
+    darkIcon.classList.toggle("active")
+
+    // Save theme preference
+    const isLight = document.documentElement.classList.contains("light-theme")
+    localStorage.setItem("theme", isLight ? "light" : "dark")
+  })
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme")
+  if (savedTheme === "light") {
+    document.documentElement.classList.add("light-theme")
+    lightIcon.classList.add("active")
+    darkIcon.classList.remove("active")
+  }
+}
+
+// Mobile Navigation
+function initMobileNav() {
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
+  const mobileNav = document.querySelector(".mobile-nav")
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav-links a")
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("active")
+    mobileMenuBtn.classList.toggle("active")
+  })
+
+  mobileNavLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active")
+      mobileMenuBtn.classList.remove("active")
+    })
+  })
+}
+
+// Smooth Scrolling
+function smoothScroll() {
+  const links = document.querySelectorAll('a[href^="#"]')
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault()
+      const targetId = this.getAttribute("href")
+      const targetSection = document.querySelector(targetId)
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        })
+      }
+    })
+  })
+}
+
+// Scroll Animations
+function handleScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible")
+      }
+    })
+  }, observerOptions)
+
+  // Add animation classes to elements
+  const animatedElements = document.querySelectorAll(
+    ".section-title, .project-tile, .skill-category, .timeline-item, .contact-info, .contact-form, .research-card, .blog-card, .testimonial-card",
+  )
+
+  animatedElements.forEach((el, index) => {
+    el.classList.add("fade-in")
+    observer.observe(el)
+  })
+}
+
+// Stats Counter Animation
+function initStatsCounter() {
+  const statNumbers = document.querySelectorAll(".stat-number")
+
+  const observerOptions = {
+    threshold: 0.5,
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const target = entry.target
+        const finalValue = Number.parseInt(target.getAttribute("data-count"))
+        animateCounter(target, finalValue)
+        observer.unobserve(target)
+      }
+    })
+  }, observerOptions)
+
+  statNumbers.forEach((stat) => {
+    observer.observe(stat)
+  })
+}
+
+function animateCounter(element, target) {
+  let current = 0
+  const increment = target / 50
+  const timer = setInterval(() => {
+    current += increment
+    if (current >= target) {
+      current = target
+      clearInterval(timer)
+    }
+    element.textContent = Math.floor(current)
+  }, 50)
+}
+
+// Skills Orbit Interaction
+function initSkillsOrbit() {
+  const skillIcons = document.querySelectorAll(".skill-icon")
+
+  skillIcons.forEach((icon) => {
+    icon.addEventListener("mouseenter", function () {
+      const skillName = this.getAttribute("data-skill")
+
+      // Create tooltip
+      const tooltip = document.createElement("div")
+      tooltip.className = "skill-tooltip"
+      tooltip.textContent = skillName
+      tooltip.style.cssText = `
+                position: absolute;
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                border: 1px solid var(--accent-cyan);
+                border-radius: 5px;
+                padding: 0.5rem 1rem;
+                color: var(--text-primary);
+                font-size: 0.9rem;
+                z-index: 1000;
+                pointer-events: none;
+                transform: translate(-50%, -120%);
+                white-space: nowrap;
+            `
+
+      this.appendChild(tooltip)
+    })
+
+    icon.addEventListener("mouseleave", function () {
+      const tooltip = this.querySelector(".skill-tooltip")
+      if (tooltip) {
+        tooltip.remove()
+      }
+    })
+  })
+}
+
+// Contact Form Handler
+// Update the initContactForm function
+function initContactForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  // Create toast notification container if it doesn't exist
+  let toastContainer = document.querySelector('.toast-container');
+  if (!toastContainer) {
+    toastContainer = document.createElement('div');
+    toastContainer.className = 'toast-container';
+    document.body.appendChild(toastContainer);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]').value.trim();
+    const email = form.querySelector('input[type="email"]').value.trim();
+    const projectType = form.querySelector('select').value;
+    const message = form.querySelector('textarea').value.trim();
+
+    try {
+      await db.collection('contacts').add({
+        name,
+        email,
+        projectType,
+        message,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      });
+      
+      // Show success toast
+      showToast('success', '✨ Message Sent Successfully!', 'Thank you for reaching out. I will get back to you soon.');
+      form.reset();
+    } catch (error) {
+      // Show error toast
+      showToast('error', '❌ Message Failed to Send', 'Please try again or contact me directly via email.');
+      console.error(error);
+    }
+  });
+}
+
+// Add this helper function for creating toasts
+function showToast(type, title, message) {
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  
+  toast.innerHTML = `
+    <div class="toast-content">
+      <h4>${title}</h4>
+      <p>${message}</p>
+    </div>
+    <button class="toast-close">×</button>
+  `;
+
+  const toastContainer = document.querySelector('.toast-container');
+  toastContainer.appendChild(toast);
+
+  // Add click handler for close button
+  const closeBtn = toast.querySelector('.toast-close');
+  closeBtn.addEventListener('click', () => {
+    toast.classList.add('toast-fade-out');
+    setTimeout(() => toast.remove(), 300);
+  });
+
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    toast.classList.add('toast-fade-out');
+    setTimeout(() => toast.remove(), 300);
+  }, 5000);
+}
+
+// Hero CTA Buttons
+function initHeroCTA() {
+  const primaryButton = document.querySelector(".cta-button.primary")
+  const secondaryButton = document.querySelector(".cta-button.secondary")
+
+  primaryButton.addEventListener("click", () => {
+    document.querySelector("#projects").scrollIntoView({
+      behavior: "smooth",
+    })
+  })
+
+  secondaryButton.addEventListener("click", () => {
+    // Simulate CV download
+    const link = document.createElement("a")
+    link.href = "./CV/HAICHEUR Mohamed Amine (2).pdf" // Replace with actual CV URL
+    link.download = "HAICHEUR_Mohamed_Amine_CV.pdf"
+    link.click()
+  })
+}
+
+// Parallax Effect
+function initParallax() {
+  window.addEventListener("scroll", () => {
+    const scrolled = window.pageYOffset
+    const parallaxElements = document.querySelectorAll(".tesseract")
+
+    parallaxElements.forEach((element) => {
+      const speed = 0.5
+      element.style.transform = `translate(-50%, -50%) translateY(${scrolled * speed}px)`
+    })
+  })
+}
+
+// Navigation Active State
+function updateNavigation() {
+  const sections = document.querySelectorAll("section[id]")
+  const navLinks = document.querySelectorAll(".nav-links a, .mobile-nav-links a")
+
+  window.addEventListener("scroll", () => {
+    let current = ""
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop
+      const sectionHeight = section.clientHeight
+
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute("id")
+      }
+    })
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active")
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active")
+      }
+    })
+  })
+}
+
+// Typing Effect for Hero
+function initTypingEffect() {
+  const welcomeText = document.querySelector(".hero-welcome")
+  const text = "Welcome to my world – where logic meets creativity."
+  let index = 0
+
+  welcomeText.textContent = ""
+
+  function typeWriter() {
+    if (index < text.length) {
+      welcomeText.textContent += text.charAt(index)
+      index++
+      setTimeout(typeWriter, 50)
+    }
+  }
+
+  setTimeout(typeWriter, 2000)
+}
+
+// Project Search and Filtering
+function initProjectFilters() {
+  const filterButtons = document.querySelectorAll(".filter-btn")
+  const projectCards = document.querySelectorAll(".project-card")
+  const projectsGrid = document.querySelector(".projects-grid")
+  const searchInput = document.getElementById("project-search")
+
+  // Function to filter projects
+  function filterProjects(category, searchTerm = "") {
+    let hasVisibleProjects = false
+
+    projectCards.forEach((card) => {
+      const categories = card.dataset.category.split(" ")
+      const title = card.dataset.title.toLowerCase()
+      const tags = card.dataset.tags.toLowerCase()
+
+      const matchesCategory = category === "all" || categories.includes(category)
+      const matchesSearch =
+        searchTerm === "" || title.includes(searchTerm.toLowerCase()) || tags.includes(searchTerm.toLowerCase())
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = "block"
+        hasVisibleProjects = true
+
+        // Add animation
+        setTimeout(() => {
+          card.style.opacity = "1"
+          card.style.transform = "translateY(0)"
+        }, 100)
+      } else {
+        card.style.display = "none"
+        card.style.opacity = "0"
+        card.style.transform = "translateY(20px)"
+      }
+    })
+
+    // Show "No projects found" message if no projects match the filter
+    let noProjectsMessage = document.querySelector(".no-projects")
+
+    if (!hasVisibleProjects) {
+      if (!noProjectsMessage) {
+        noProjectsMessage = document.createElement("div")
+        noProjectsMessage.className = "no-projects"
+        noProjectsMessage.innerHTML = `
+          <h3>No projects found</h3>
+          <p>No projects match the selected filter or search term.</p>
+        `
+        projectsGrid.appendChild(noProjectsMessage)
+      }
+      noProjectsMessage.style.display = "block"
+    } else if (noProjectsMessage) {
+      noProjectsMessage.style.display = "none"
+    }
+  }
+
+  // Add click event to filter buttons
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"))
+
+      // Add active class to clicked button
+      button.classList.add("active")
+
+      // Get filter category
+      const filterCategory = button.getAttribute("data-filter")
+      const searchTerm = searchInput.value
+
+      // Filter projects
+      filterProjects(filterCategory, searchTerm)
+    })
+  })
+
+  // Add search functionality
+  searchInput.addEventListener("input", (e) => {
+    const searchTerm = e.target.value
+    const activeFilter = document.querySelector(".filter-btn.active").getAttribute("data-filter")
+    filterProjects(activeFilter, searchTerm)
+  })
+
+  // Initialize with "all" filter
+  filterProjects("all")
+
+  // Add hover effects to project cards
+  projectCards.forEach((card) => {
+    // Add floating animation
+    card.style.transition =
+      "transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, opacity 0.5s ease"
+
+    // Random floating animation
+    const randomDelay = Math.random() * 2
+    card.style.animationDelay = `${randomDelay}s`
+
+    // Add subtle floating effect
+    card.addEventListener("mouseenter", () => {
+      card.style.boxShadow = "0 15px 30px rgba(0, 255, 255, 0.2)"
+    })
+
+    card.addEventListener("mouseleave", () => {
+      card.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)"
+    })
+  })
+}
+
+// Testimonials Slider
+function initTestimonialsSlider() {
+  const track = document.querySelector(".testimonials-track")
+  const prevBtn = document.querySelector(".testimonial-prev")
+  const nextBtn = document.querySelector(".testimonial-next")
+  const dots = document.querySelectorAll(".dot")
+  let currentSlide = 0
+  const totalSlides = dots.length
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentSlide)
+    })
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides
+    updateSlider()
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides
+    updateSlider()
+  }
+
+  nextBtn.addEventListener("click", nextSlide)
+  prevBtn.addEventListener("click", prevSlide)
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentSlide = index
+      updateSlider()
+    })
+  })
+
+  // Auto-play slider
+  setInterval(nextSlide, 5000)
+}
+
+// Project Modal
+function initProjectModal() {
+  const modal = document.querySelector(".project-modal")
+  const modalClose = document.querySelector(".modal-close")
+  const projectCards = document.querySelectorAll(".project-card")
+
+  modalClose.addEventListener("click", () => {
+    modal.classList.remove("active")
+  })
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("active")
+    }
+  })
+
+  projectCards.forEach((card) => {
+    card.addEventListener("dblclick", () => {
+      // Open modal with project details
+      modal.classList.add("active")
+      // You can populate modal content here
+    })
+  })
+}
+
+// Add touch support for mobile devices
+function initTouchSupport() {
+  const projectCards = document.querySelectorAll(".project-card")
+
+  // Touch support for project cards
+  projectCards.forEach((card) => {
+    let touchStartTime = 0
+
+    card.addEventListener("touchstart", (e) => {
+      touchStartTime = Date.now()
+    })
+
+    card.addEventListener("touchend", (e) => {
+      const touchDuration = Date.now() - touchStartTime
+
+      // If it's a quick tap (less than 300ms), toggle the card
+      if (touchDuration < 300) {
+        e.preventDefault()
+        card.classList.toggle("touched")
+
+        // Remove touched class from other cards
+        projectCards.forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.classList.remove("touched")
+          }
+        })
+      }
+    })
+  })
+
+  // Close touched cards when tapping outside
+  document.addEventListener("touchstart", (e) => {
+    if (!e.target.closest(".project-card")) {
+      projectCards.forEach((card) => {
+        card.classList.remove("touched")
+      })
+    }
+  })
+}
+
+// Responsive navigation handling
+function handleResponsiveNav() {
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
+  const mobileNav = document.querySelector(".mobile-nav")
+  const navLinks = document.querySelectorAll(".nav-links a, .mobile-nav-links a")
+
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      mobileNav.classList.remove("active")
+      mobileMenuBtn.classList.remove("active")
+    }
+  })
+
+  // Close mobile nav when clicking on links
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        mobileNav.classList.remove("active")
+        mobileMenuBtn.classList.remove("active")
+      }
+    })
+  })
+}
+
+// Responsive skills orbit
+function handleResponsiveSkillsOrbit() {
+  const skillsOrbit = document.querySelector(".skills-orbit")
+
+  function adjustOrbitSize() {
+    const screenWidth = window.innerWidth
+    let orbitSize = 400
+
+    if (screenWidth <= 480) {
+      orbitSize = 220
+    } else if (screenWidth <= 576) {
+      orbitSize = 250
+    } else if (screenWidth <= 768) {
+      orbitSize = 280
+    } else if (screenWidth <= 992) {
+      orbitSize = 320
+    } else if (screenWidth <= 1200) {
+      orbitSize = 350
+    }
+
+    if (skillsOrbit) {
+      skillsOrbit.style.width = `${orbitSize}px`
+      skillsOrbit.style.height = `${orbitSize}px`
+    }
+  }
+
+  adjustOrbitSize()
+  window.addEventListener("resize", adjustOrbitSize)
+}
+
+// Responsive testimonials
+function handleResponsiveTestimonials() {
+  const testimonialCards = document.querySelectorAll(".testimonial-card")
+
+  function adjustTestimonialPadding() {
+    const screenWidth = window.innerWidth
+
+    testimonialCards.forEach((card) => {
+      if (screenWidth <= 480) {
+        card.style.padding = "1rem"
+      } else if (screenWidth <= 768) {
+        card.style.padding = "1.5rem 1rem"
+      } else {
+        card.style.padding = "3rem"
+      }
+    })
+  }
+
+  adjustTestimonialPadding()
+  window.addEventListener("resize", adjustTestimonialPadding)
+}
+
+// Responsive particle system
+function handleResponsiveParticles() {
+  const container = document.getElementById("particles-container")
+
+  function adjustParticleCount() {
+    const screenWidth = window.innerWidth
+    let particleCount = 50
+
+    if (screenWidth <= 480) {
+      particleCount = 20
+    } else if (screenWidth <= 768) {
+      particleCount = 30
+    } else if (screenWidth <= 992) {
+      particleCount = 40
+    }
+
+    // Clear existing particles
+    container.innerHTML = ""
+
+    // Create new particles with adjusted count
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement("div")
+      particle.className = "particle"
+      particle.style.left = Math.random() * 100 + "%"
+      particle.style.animationDelay = Math.random() * 20 + "s"
+      particle.style.animationDuration = Math.random() * 10 + 10 + "s"
+      container.appendChild(particle)
+    }
+  }
+
+  adjustParticleCount()
+  window.addEventListener("resize", adjustParticleCount)
+}
+
+// Responsive modal handling
+function handleResponsiveModal() {
+  const modal = document.querySelector(".project-modal")
+  const modalContent = document.querySelector(".modal-content")
+
+  function adjustModalSize() {
+    const screenWidth = window.innerWidth
+    const screenHeight = window.innerHeight
+
+    if (modalContent) {
+      if (screenWidth <= 768) {
+        modalContent.style.maxWidth = "95vw"
+        modalContent.style.maxHeight = "95vh"
+        modalContent.style.margin = "2.5vh auto"
+      } else {
+        modalContent.style.maxWidth = "90vw"
+        modalContent.style.maxHeight = "90vh"
+        modalContent.style.margin = "5vh auto"
+      }
+    }
+  }
+
+  adjustModalSize()
+  window.addEventListener("resize", adjustModalSize)
+}
+
+// Responsive font scaling
+function handleResponsiveFonts() {
+  function adjustFontSizes() {
+    const screenWidth = window.innerWidth
+    const root = document.documentElement
+
+    if (screenWidth <= 360) {
+      root.style.fontSize = "14px"
+    } else if (screenWidth <= 480) {
+      root.style.fontSize = "15px"
+    } else if (screenWidth <= 768) {
+      root.style.fontSize = "16px"
+    } else {
+      root.style.fontSize = "16px"
+    }
+  }
+
+  adjustFontSizes()
+  window.addEventListener("resize", adjustFontSizes)
+}
+
+// Responsive image loading
+function handleResponsiveImages() {
+  const images = document.querySelectorAll("img")
+
+  images.forEach((img) => {
+    img.addEventListener("load", () => {
+      img.style.opacity = "1"
+    })
+
+    img.addEventListener("error", () => {
+      img.style.opacity = "0.5"
+      img.alt = "Image not available"
+    })
+  })
+}
+
+// Performance optimization for mobile
+function optimizeForMobile() {
+  const isMobile = window.innerWidth <= 768
+
+  if (isMobile) {
+    // Reduce animation complexity on mobile
+    const tesseract = document.querySelector(".tesseract")
+    if (tesseract) {
+      tesseract.style.animationDuration = "30s" // Slower animation
+    }
+
+    // Disable parallax on mobile for better performance
+    const parallaxElements = document.querySelectorAll(".tesseract")
+    parallaxElements.forEach((element) => {
+      element.style.transform = "translate(-50%, -50%)"
+    })
+  }
+}
+
+// Initialize all functions
+document.addEventListener("DOMContentLoaded", () => {
+  createParticles()
+  initThemeToggle()
+  initMobileNav()
+  smoothScroll()
+  handleScrollAnimations()
+  initStatsCounter()
+  initSkillsOrbit()
+  initContactForm()
+  initHeroCTA()
+  initParallax()
+  updateNavigation()
+  initTypingEffect()
+  initProjectFilters()
+  initTestimonialsSlider()
+  initProjectModal()
+
+  // Add loading animation
+  document.body.style.opacity = "0"
+  setTimeout(() => {
+    document.body.style.transition = "opacity 1s ease"
+    document.body.style.opacity = "1"
+  }, 100)
+
+  // Add new responsive functions
+  initTouchSupport()
+  handleResponsiveNav()
+  handleResponsiveSkillsOrbit()
+  handleResponsiveTestimonials()
+  handleResponsiveParticles()
+  handleResponsiveModal()
+  handleResponsiveFonts()
+  handleResponsiveImages()
+  optimizeForMobile()
+})
+
+// Performance optimization
+window.addEventListener("load", () => {
+  // Remove loading states
+  document.body.classList.add("loaded")
+})
+
+// Resize handler
+window.addEventListener("resize", () => {
+  // Recalculate particle positions if needed
+  const particles = document.querySelectorAll(".particle")
+  particles.forEach((particle) => {
+    particle.style.left = Math.random() * 100 + "%"
+  })
+})
+
+// Keyboard navigation
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const modal = document.querySelector(".project-modal")
+    const mobileNav = document.querySelector(".mobile-nav")
+
+    if (modal.classList.contains("active")) {
+      modal.classList.remove("active")
+    }
+
+    if (mobileNav.classList.contains("active")) {
+      mobileNav.classList.remove("active")
+      document.querySelector(".mobile-menu-btn").classList.remove("active")
+    }
+  }
+})
+
+// Handle orientation changes
+window.addEventListener("orientationchange", () => {
+  setTimeout(() => {
+    handleResponsiveSkillsOrbit()
+    handleResponsiveTestimonials()
+    handleResponsiveParticles()
+    optimizeForMobile()
+  }, 100)
+})
+
+// Handle viewport changes (for mobile browsers with dynamic viewport)
+const vh = window.innerHeight * 0.01
+document.documentElement.style.setProperty("--vh", `${vh}px`)
+
+window.addEventListener("resize", () => {
+  const vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty("--vh", `${vh}px`)
+})
